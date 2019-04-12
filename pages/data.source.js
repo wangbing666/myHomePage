@@ -6,51 +6,58 @@ export const Nav20DataSource = {
   logo: {
     className: 'header2-logo',
     children:
-      'https://gw.alipayobjects.com/os/s/prod/seeconf/9b458a789d9a000312899b42a7542b9c.svg',
+      '≈先锋团队',
   },
   Menu: {
     className: 'header2-menu',
     children: [
       {
-        name: 'Banner3_0',
-        to: 'Banner3_0',
-        children: '首页',
-        className: 'active menu-item',
+        name: 'Content0_0',
+        to: 'Content0_0',
+        children: '基本资料',
+        className: 'menu-item',
       },
       {
         name: 'Content8_0',
         to: 'Content8_0',
-        children: '特邀嘉宾',
+        children: '项目经验',
         className: 'menu-item',
       },
       {
         name: 'Content9_0',
         to: 'Content9_0',
-        children: '会议日程',
+        children: '工作经历',
         className: 'menu-item',
       },
-      {
-        name: 'Content10_0',
-        to: 'Content10_0',
-        children: '大会地址',
-        className: 'menu-item',
-      },
+      // {
+      //   name: 'Content10_0',
+      //   to: 'Content10_0',
+      //   children: '专业技能',
+      //   className: 'menu-item',
+      // },
       {
         name: 'Content11_0',
         to: 'Content11_0',
-        children: '展台展示',
+        children: '专业技能',
         className: 'menu-item',
       },
       {
         name: 'Content12_0',
         to: 'Content12_0',
-        children: '特别鸣谢',
+        children: '联系方式',
+        className: 'menu-item',
+      },
+      {
+        name: 'Content12_0',
+        to: 'Content12_0',
+        children: '个人博客',
         className: 'menu-item',
       },
     ],
   },
   mobileMenu: { className: 'header2-mobile-menu' },
 };
+
 export const Banner30DataSource = {
   wrapper: { className: 'banner3' },
   textWrapper: {
@@ -59,24 +66,85 @@ export const Banner30DataSource = {
       {
         name: 'nameEn',
         className: 'banner3-name-en',
-        children: 'Seeking Experience & Engineering Conference',
+        children: 'Like technology & Love challenges',
       },
       {
         name: 'slogan',
         className: 'banner3-slogan',
-        children: '首届蚂蚁金服体验科技大会',
+        children: 'web前端开发攻城狮',
         texty: true,
       },
       {
         name: 'name',
         className: 'banner3-name',
-        children: '探索极致用户体验与最佳工程实践探索',
+        children: '追求极致用户体验与最佳项目实践',
       },
-      { name: 'button', className: 'banner3-button', children: '立即报名' },
       {
         name: 'time',
         className: 'banner3-time',
-        children: '2018.01.06 / 中国·杭州',
+        children: '',
+      },
+    ],
+  },
+};
+export const Content00DataSource = {
+  wrapper: { className: 'home-page-wrapper content0-wrapper' },
+  page: { className: 'home-page content0' },
+  OverPack: { playScale: 0.3, className: '' },
+  titleWrapper: {
+    className: 'title-wrapper',
+    children: [{ name: 'title', children: '基本资料' }],
+  },
+  block: {
+    className: 'block-wrapper',
+    children: [
+      {
+        name: 'block0',
+        className: 'block',
+        md: 8,
+        xs: 24,
+        children: {
+          icon: {
+            className: 'icon',
+            children:
+              'https://zos.alipayobjects.com/rmsportal/WBnVOjtIlGWbzyQivuyq.png',
+          },
+          title: { className: 'content0-title', children: '个人信息' },
+          content: { children: '姓名：王兵   性别：男 <br> 年龄：27  籍贯：湖北' },
+        },
+      },
+      {
+        name: 'block1',
+        className: 'block',
+        md: 8,
+        xs: 24,
+        children: {
+          icon: {
+            className: 'icon',
+            children:
+              'https://zos.alipayobjects.com/rmsportal/YPMsLQuCEXtuEkmXTTdk.png',
+          },
+          title: {
+            className: 'content0-title',
+            children: '专业学历',
+          },
+          content: { children: '专业：激光加工技术 <br> 学历：大专' },
+        },
+      },
+      {
+        name: 'block2',
+        className: 'block',
+        md: 8,
+        xs: 24,
+        children: {
+          icon: {
+            className: 'icon',
+            children:
+              'https://zos.alipayobjects.com/rmsportal/EkXWVvAaFJKCzhMmQYiX.png',
+          },
+          title: { className: 'content0-title', children: '毕业院校' },
+          content: { children: '武汉船舶职业技术学院' },
+        },
       },
     ],
   },
@@ -94,7 +162,7 @@ export const Content80DataSource = {
           'https://gw.alipayobjects.com/zos/rmsportal/PiqyziYmvbgAudYfhuBr.svg',
         className: 'title-image',
       },
-      { name: 'title', children: '特邀嘉宾', className: 'title-h1' },
+      { name: 'title', children: '项目经验', className: 'title-h1' },
     ],
   },
   block: {
@@ -112,10 +180,10 @@ export const Content80DataSource = {
             children:
               'https://gw.alipayobjects.com/zos/rmsportal/JahzbVrdHdJlkJjkNsBJ.png',
           },
-          title: { className: 'content8-title', children: 'Jack' },
+          title: { className: 'content8-title', children: '全程心管家后台管理系统' },
           content: {
             className: 'content8-content',
-            children: '公司+职位 信息暂缺',
+            children: '技术：Angular + Material',
           },
         },
       },
@@ -131,10 +199,10 @@ export const Content80DataSource = {
             children:
               'https://gw.alipayobjects.com/zos/rmsportal/JahzbVrdHdJlkJjkNsBJ.png',
           },
-          title: { className: 'content8-title', children: 'Jack' },
+          title: { className: 'content8-title', children: '全程心管家微信公众号' },
           content: {
             className: 'content8-content',
-            children: '公司+职位 信息暂缺',
+            children: '技术：Express + Jquery',
           },
         },
       },
@@ -150,10 +218,10 @@ export const Content80DataSource = {
             children:
               'https://gw.alipayobjects.com/zos/rmsportal/JahzbVrdHdJlkJjkNsBJ.png',
           },
-          title: { className: 'content8-title', children: 'Jack' },
+          title: { className: 'content8-title', children: '瑞金医院后台管理系统' },
           content: {
             className: 'content8-content',
-            children: '公司+职位 信息暂缺',
+            children: '技术：Vue2.0 + Element-ui',
           },
         },
       },
@@ -169,10 +237,10 @@ export const Content80DataSource = {
             children:
               'https://gw.alipayobjects.com/zos/rmsportal/JahzbVrdHdJlkJjkNsBJ.png',
           },
-          title: { className: 'content8-title', children: 'Jack' },
+          title: { className: 'content8-title', children: '金雷科技官网' },
           content: {
             className: 'content8-content',
-            children: '公司+职位 信息暂缺',
+            children: '技术：Jquery + Bootstrap',
           },
         },
       },
@@ -188,10 +256,10 @@ export const Content80DataSource = {
             children:
               'https://gw.alipayobjects.com/zos/rmsportal/JahzbVrdHdJlkJjkNsBJ.png',
           },
-          title: { className: 'content8-title', children: 'Jack' },
+          title: { className: 'content8-title', children: '奇羽记微信公众号' },
           content: {
             className: 'content8-content',
-            children: '公司+职位 信息暂缺',
+            children: '技术：Express + Jquery',
           },
         },
       },
@@ -207,10 +275,10 @@ export const Content80DataSource = {
             children:
               'https://gw.alipayobjects.com/zos/rmsportal/JahzbVrdHdJlkJjkNsBJ.png',
           },
-          title: { className: 'content8-title', children: 'Jack' },
+          title: { className: 'content8-title', children: '创投通讯录小程序' },
           content: {
             className: 'content8-content',
-            children: '公司+职位 信息暂缺',
+            children: '技术：wxml + wxss + js',
           },
         },
       },
@@ -226,10 +294,10 @@ export const Content80DataSource = {
             children:
               'https://gw.alipayobjects.com/zos/rmsportal/JahzbVrdHdJlkJjkNsBJ.png',
           },
-          title: { className: 'content8-title', children: 'Jack' },
+          title: { className: 'content8-title', children: '微度商户后台管理系统' },
           content: {
             className: 'content8-content',
-            children: '公司+职位 信息暂缺',
+            children: '技术：React + Ant Design',
           },
         },
       },
@@ -245,10 +313,10 @@ export const Content80DataSource = {
             children:
               'https://gw.alipayobjects.com/zos/rmsportal/JahzbVrdHdJlkJjkNsBJ.png',
           },
-          title: { className: 'content8-title', children: 'Jack' },
+          title: { className: 'content8-title', children: '微度APP' },
           content: {
             className: 'content8-content',
-            children: '公司+职位 信息暂缺',
+            children: '技术：React + Antd Mobile',
           },
         },
       },
@@ -267,7 +335,7 @@ export const Content90DataSource = {
           'https://gw.alipayobjects.com/zos/rmsportal/PiqyziYmvbgAudYfhuBr.svg',
         className: 'title-image',
       },
-      { name: 'title', children: '会议日程', className: 'title-h1' },
+      { name: 'title', children: '工作经历', className: 'title-h1' },
     ],
   },
   block: {
@@ -290,11 +358,11 @@ export const Content90DataSource = {
             children:
               'https://gw.alipayobjects.com/zos/rmsportal/qJnGrvjXPxdKETlVSrbe.svg',
           },
-          name: { className: 'block-name', children: '姓名' },
-          post: { className: 'block-post', children: '公司 职位' },
-          time: { className: 'block-time', children: '09:00 - 10:00' },
-          title: { className: 'block-title', children: '开幕致辞' },
-          content: { className: 'block-content', children: '' },
+          name: { className: 'block-name', children: '上海金雷科技有限公司' },
+          post: { className: 'block-post', children: '技术部' },
+          time: { className: 'block-time', children: '2015.6 - 2016.3' },
+          title: { className: 'block-title', children: 'web前端开发工程师' },
+          content: { className: 'block-content', children: '参与公司官网的开发和维护，项目主要使用 html+css+jquery 开发，使用 CSS3 动画模块Transitions,Transforms 和 Animation 交互效果，并支持 PC，ipad，手机等响应式布局' },
         },
       },
       {
@@ -314,14 +382,14 @@ export const Content90DataSource = {
             children:
               'https://gw.alipayobjects.com/zos/rmsportal/QviGtUPvTFxdhsTUAacr.svg',
           },
-          name: { className: 'block-name', children: '姓名' },
-          post: { className: 'block-post', children: '公司 职位' },
-          time: { className: 'block-time', children: '09:00 - 10:00' },
-          title: { className: 'block-title', children: '演示标题 - XYZ' },
+          name: { className: 'block-name', children: '万达信息股份有限公司' },
+          post: { className: 'block-post', children: '健康云一部' },
+          time: { className: 'block-time', children: '2016.3 - 2018.5' },
+          title: { className: 'block-title', children: 'H5开发工程师' },
           content: {
             className: 'block-content',
             children:
-              '经过近 3 年的打磨，在助力中台产品研发效能提升的目标之上，包含设计语言、UI 资产、可视化以及产品体验相关的蚂蚁中台设计体系正在逐步成型。此次分享包含两部分，在介绍蚂蚁设计体系的同时，也会和大家分享我们在设计语言的部分探索。',
+              '1，参与全程心管家后台管理系统的开发与维护，该项目基于 angular2 和 material 框架开发。 <br> 2、参与肾移植管家后台管理系统的开发与维护，项目基于 angular2 框架的开发，使用 TypeScript 进行开发。 <br>3、负责全程心管家微信公众号的开发与维护，该项目基于 ExpressJS 框架开发，Node.js 作为中间请求，ejs作为客户端模板渲染。<br> 4、 瑞金医院的开发与维护，项目主要基于 Vue2.0，element-ui 作为组件框架进行开发',
           },
         },
       },
@@ -342,42 +410,14 @@ export const Content90DataSource = {
             children:
               'https://gw.alipayobjects.com/zos/rmsportal/QviGtUPvTFxdhsTUAacr.svg',
           },
-          name: { className: 'block-name', children: '姓名' },
-          post: { className: 'block-post', children: '公司 职位' },
-          time: { className: 'block-time', children: '09:00 - 10:00' },
-          title: { className: 'block-title', children: '演示标题 - XYZ' },
+          name: { className: 'block-name', children: '上海银生宝电子支付有限公司' },
+          post: { className: 'block-post', children: '点宝开发部' },
+          time: { className: 'block-time', children: '2018.6 - 2018.12' },
+          title: { className: 'block-title', children: 'H5开发工程师' },
           content: {
             className: 'block-content',
             children:
-              '经过近 3 年的打磨，在助力中台产品研发效能提升的目标之上，包含设计语言、UI 资产、可视化以及产品体验相关的蚂蚁中台设计体系正在逐步成型。此次分享包含两部分，在介绍蚂蚁设计体系的同时，也会和大家分享我们在设计语言的部分探索。',
-          },
-        },
-      },
-      {
-        name: 'block3',
-        className: 'block-wrapper',
-        playScale: 0.3,
-        children: {
-          imgWrapper: { className: 'image-wrapper' },
-          textWrapper: { className: 'text-wrapper' },
-          img: {
-            className: 'block-img',
-            children:
-              'https://gw.alipayobjects.com/zos/rmsportal/SlFgHDtOTLzccvFrQHLg.png',
-          },
-          icon: {
-            className: 'block-icon',
-            children:
-              'https://gw.alipayobjects.com/zos/rmsportal/agOOBdKEIJlQhfeYhHJc.svg',
-          },
-          name: { className: 'block-name', children: '姓名' },
-          post: { className: 'block-post', children: '公司 职位' },
-          time: { className: 'block-time', children: '09:00 - 10:00' },
-          title: { className: 'block-title', children: '演示标题 - XYZ' },
-          content: {
-            className: 'block-content',
-            children:
-              '经过近 3 年的打磨，在助力中台产品研发效能提升的目标之上，包含设计语言、UI 资产、可视化以及产品体验相关的蚂蚁中台设计体系正在逐步成型。此次分享包含两部分，在介绍蚂蚁设计体系的同时，也会和大家分享我们在设计语言的部分探索。',
+              '1，参与公司移动端微度产品开发，该项目基于移动端和 H5 的混合模式，前 端使用 React.js 框架,结合 redux 状态管理，使用 Ant Design Mobile 组件框架，利用 WKWebView 的新特性 MessageHandler 来实现 JS 调用原生方法进行开发 <br> 2，负责公司微度产品商户后台管理系统的开发，搭建项目模块架构，封装 http 请求，项目基于 Umi 框架，结 合 Dva 数据存储，和 Ant Design 组件框架进行开发',
           },
         },
       },
@@ -424,23 +464,18 @@ export const Content110DataSource = {
           'https://gw.alipayobjects.com/zos/rmsportal/PiqyziYmvbgAudYfhuBr.svg',
         className: 'title-image',
       },
-      { name: 'title', children: '丰富的特色展台', className: 'title-h1' },
+      { name: 'title', children: '专业技能', className: 'title-h1' },
       {
         name: 'content',
         children:
-          '特色展台包括 Ant Design 、AntV、AntG、Egg 等明星产品，更有产品专家',
-        className: 'title-content',
-      },
-      {
-        name: 'content2',
-        children: '现场问诊，为你答疑解难',
+          '1,熟练使用react,vue,angular框架，能使用框架开发PC端，手机端页面 <br> 2，熟悉node.js，能独立使用express开发微信公众号 <br> 3, 熟悉小程序开发原理，接口组件，验证授权等，能独立开发微信小程序<br> 4,熟悉webpack打包原理，能使用webpack针对不同环境打包 <br> 5,熟悉less,sass,能使用less,sass预处理器编写css样式 <br> 6,良好的代码风格和注释习惯，熟练使用git和svn等版本管理工具<br> 7,了解基本的数据结构与算法，能处理后端返回的不同数据',
         className: 'title-content',
       },
     ],
   },
   button: {
     className: '',
-    children: { a: { className: 'button', href: '#', children: '立即报名' } },
+    children: { a: { className: 'button', href: '#', children: '' } },
   },
 };
 export const Content120DataSource = {
@@ -456,7 +491,7 @@ export const Content120DataSource = {
           'https://gw.alipayobjects.com/zos/rmsportal/PiqyziYmvbgAudYfhuBr.svg',
         className: 'title-image',
       },
-      { name: 'title', children: '特别鸣谢', className: 'title-h1' },
+      { name: 'title', children: '联系方式', className: 'title-h1' },
     ],
   },
   block: {
@@ -468,10 +503,11 @@ export const Content120DataSource = {
         md: 8,
         xs: 24,
         children: {
+          icon: {className: 'iconfont iconweizhi'},
           wrapper: { className: 'block-content' },
-          img: {
+          string: {
             children:
-              'https://gw.alipayobjects.com/zos/rmsportal/TFicUVisNHTOEeMYXuQF.svg',
+              '上海市浦东新区世博大道宝武大厦',
           },
         },
       },
@@ -481,10 +517,11 @@ export const Content120DataSource = {
         md: 8,
         xs: 24,
         children: {
+          icon: {className: 'iconfont iconyoujian'},
           wrapper: { className: 'block-content' },
-          img: {
+          string: {
             children:
-              'https://gw.alipayobjects.com/zos/rmsportal/hkLGkrlCEkGZeMQlnEkD.svg',
+              '120334644@qq.com',
           },
         },
       },
@@ -494,49 +531,11 @@ export const Content120DataSource = {
         md: 8,
         xs: 24,
         children: {
+          icon: {className: 'iconfont iconqq'},
           wrapper: { className: 'block-content' },
-          img: {
+          string: {
             children:
-              'https://gw.alipayobjects.com/zos/rmsportal/bqyPRSZmhvrsfJrBvASi.svg',
-          },
-        },
-      },
-      {
-        name: 'block3',
-        className: 'block',
-        md: 8,
-        xs: 24,
-        children: {
-          wrapper: { className: 'block-content' },
-          img: {
-            children:
-              'https://gw.alipayobjects.com/zos/rmsportal/UcsyszzOabdCYDkoPPnM.svg',
-          },
-        },
-      },
-      {
-        name: 'block4',
-        className: 'block',
-        md: 8,
-        xs: 24,
-        children: {
-          wrapper: { className: 'block-content' },
-          img: {
-            children:
-              'https://gw.alipayobjects.com/zos/rmsportal/kRBeaICGexAmVjqBEqgw.svg',
-          },
-        },
-      },
-      {
-        name: 'block5',
-        className: 'block',
-        md: 8,
-        xs: 24,
-        children: {
-          wrapper: { className: 'block-content' },
-          img: {
-            children:
-              'https://gw.alipayobjects.com/zos/rmsportal/ftBIiyJcCHpHEioRvPsV.svg',
+              'QQ: 120334644',
           },
         },
       },
@@ -557,7 +556,7 @@ export const Footer20DataSource = {
       },
       {
         name: 'group',
-        children: '蚂蚁金服体验科技大会',
+        children: '我的个人简历',
         className: 'copyright-group',
       },
       {
@@ -568,7 +567,7 @@ export const Footer20DataSource = {
       },
       {
         name: 'copyright',
-        children: 'Copyright © 蚂蚁金融服务集团',
+        children: 'Copyright © 上海睿渠网络技术有限公司',
         className: 'copyright-text',
       },
     ],

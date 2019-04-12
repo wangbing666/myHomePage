@@ -25,11 +25,11 @@ class Content11 extends React.PureComponent {
               typeof item.children === 'string' &&
               item.children.match(/\.(svg|gif|jpg|jpeg|png|JPG|PNG|GIF|JPEG)$/)
                 ? React.createElement('img', { src: item.children, alt: 'img' })
-                : item.children
+                : <span dangerouslySetInnerHTML={{__html: item.children}}></span>
             )
           )}
         </QueueAnim>
-        <TweenOne
+        {/* <TweenOne
           key="button"
           style={{ textAlign: 'center' }}
           {...dataSource.button}
@@ -38,7 +38,7 @@ class Content11 extends React.PureComponent {
           <a {...dataSource.button.children.a}>
             {dataSource.button.children.a.children}
           </a>
-        </TweenOne>
+        </TweenOne> */}
       </OverPack>
     );
   }

@@ -22,8 +22,8 @@ class Content9 extends React.PureComponent {
           </i>
           {item.title.children}
         </h2>
-        <div key="p" {...item.content}>
-          {item.content.children}
+        <div key="p" {...item.content} >
+          <span dangerouslySetInnerHTML={{__html: item.content.children}}></span>
         </div>
       </QueueAnim>
     );

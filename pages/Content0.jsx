@@ -1,18 +1,20 @@
 import React from 'react';
+import QueueAnim from 'rc-queue-anim';
 import { Row, Col } from 'antd';
-import { TweenOneGroup } from 'rc-tween-one';
 import OverPack from 'rc-scroll-anim/lib/ScrollOverPack';
 
-class Content12 extends React.PureComponent {
-  getChildrenToRender = (data) =>
-    data.map((item) => {
+class Content extends React.PureComponent {
+  getBlockChildren = (data) =>
+    data.map((item, i) => {
+      const children = item.children;
       return (
-        <Col key={item.name} {...item}>
-          <div className="contact-icon"><i {...item.children.icon}></i></div>
-          <div {...item.children.wrapper}>
-            <span {...item.children.string}>
-              {item.children.string.children}
-            </span>
+        <Col key={i.toString()} {...item}>
+          <div {...children.icon}>
+            <img src={children.icon.children} width="100%" alt="img" />
+          </div>
+          <h3 {...children.title}>{children.title.children}</h3>
+          <div {...children.content}>
+          <span dangerouslySetInnerHTML={{__html: children.content.children}}></span>
           </div>
         </Col>
       );
@@ -23,13 +25,11 @@ class Content12 extends React.PureComponent {
     const { dataSource } = props;
     delete props.dataSource;
     delete props.isMobile;
-    const childrenToRender = this.getChildrenToRender(
-      dataSource.block.children
-    );
+    const listChildren = this.getBlockChildren(dataSource.block.children);
     return (
       <div {...props} {...dataSource.wrapper}>
         <div {...dataSource.page}>
-          <div key="title" {...dataSource.titleWrapper}>
+          <div {...dataSource.titleWrapper}>
             {dataSource.titleWrapper.children.map((item, i) =>
               React.createElement(
                 item.name.indexOf('title') === 0 ? 'h1' : 'div',
@@ -40,30 +40,23 @@ class Content12 extends React.PureComponent {
                 )
                   ? React.createElement('img', {
                       src: item.children,
+                      height: '100%',
                       alt: 'img',
                     })
                   : item.children
               )
             )}
           </div>
-          <OverPack
-            className={`content-template ${props.className}`}
-            {...dataSource.OverPack}
-          >
-            <TweenOneGroup
-              component={Row}
-              key="ul"
-              enter={{
-                y: '+=30',
-                opacity: 0,
-                type: 'from',
-                ease: 'easeOutQuad',
-              }}
-              leave={{ y: '+=30', opacity: 0, ease: 'easeOutQuad' }}
+          <OverPack {...dataSource.OverPack}>
+            <QueueAnim
+              type="bottom"
+              key="block"
+              leaveReverse
               {...dataSource.block}
+              component={Row}
             >
-              {childrenToRender}
-            </TweenOneGroup>
+              {listChildren}
+            </QueueAnim>
           </OverPack>
         </div>
       </div>
@@ -71,4 +64,4 @@ class Content12 extends React.PureComponent {
   }
 }
 
-export default Content12;
+export default Content;

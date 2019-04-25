@@ -3,15 +3,15 @@
 import React from 'react';
 import { enquireScreen } from 'enquire-js';
 
-import Nav2 from './Nav2';
-import Banner3 from './Banner3';
-import Content0 from './Content0';
-import Content8 from './Content8';
-import Content9 from './Content9';
-import Content10 from './Content10';
-import Content11 from './Content11';
-import Content12 from './Content12';
-import Footer2 from './Footer2';
+import Nav2 from '../components/home/Nav2';
+import Banner3 from '../components/home/Banner3';
+import Content0 from '../components/home/Content0';
+import Content8 from '../components/home/Content8';
+import Content9 from '../components/home/Content9';
+import Content10 from '../components/home/Content10';
+import Content11 from '../components/home/Content11';
+import Content12 from '../components/home/Content12';
+import Footer2 from '../components/home/Footer2';
 
 import {
   Nav20DataSource,
@@ -25,7 +25,7 @@ import {
   Footer20DataSource,
 } from './data.source';
 import '../less/antMotionStyle.less';
-import 'antd/dist/antd.css';
+
 
 let isMobile;
 enquireScreen((b) => {

@@ -48,8 +48,9 @@ export const Nav20DataSource = {
         className: 'menu-item',
       },
       {
-        name: 'Content12_0',
-        to: 'Content12_0',
+        name: 'Content13_0',
+        to: '/blog',
+        href: '/blog',
         children: '个人博客',
         className: 'menu-item',
       },

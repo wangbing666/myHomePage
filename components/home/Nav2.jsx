@@ -1,6 +1,7 @@
 import React from 'react';
 import TweenOne from 'rc-tween-one';
 import { Link } from 'rc-scroll-anim';
+import Router from 'next/router';
 
 class Header extends React.Component {
   constructor(props) {
@@ -27,6 +28,12 @@ class Header extends React.Component {
     });
   };
 
+  toLink = (value, key) => {
+    if (key == 5) {
+      Router.push(value.to)
+    }
+  }
+
   render() {
     const { ...props } = this.props;
     const { dataSource, isMobile } = props;
@@ -35,7 +42,7 @@ class Header extends React.Component {
     const { menuHeight, phoneOpen } = this.state;
     const navData = dataSource.Menu.children;
     const navChildren = Object.keys(navData).map((key, i) => (
-      <Link key={i.toString()} {...navData[key]}>
+      <Link key={i.toString()} {...navData[key]} onClick={() => { this.toLink(navData[key], key) }}>
         {navData[key].children}
       </Link>
     ));

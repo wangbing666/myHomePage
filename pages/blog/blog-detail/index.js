@@ -5,7 +5,7 @@ import Footer from '../../../components/partials/footer'
 
 export default class extends React.Component {
   static async getInitialProps({ query }) {
-    return await axios.get(`http://localhost:7001/api/v2/blog`, { params: { id: query.id } })
+    return await axios.get(`http://www.wangbing.ren:7001/api/v2/blog`, { params: { id: query.id } })
       .then((response) => {
         const data = response.data
         if (data && data.code == 200) {

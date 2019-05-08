@@ -13,7 +13,7 @@ const { Meta } = Card
 
 export default class extends React.Component {
   static async getInitialProps({ req }) {
-    return await axios.get(`http://www.wangbing.ren:7001/api/v2/blog/sho`)
+    return await axios.get(`http://www.wangbing.ren:7001/api/v2/blog/show`)
       .then((response) => {
         const data = response.data
         if (data && data.code == 200) {

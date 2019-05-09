@@ -1,5 +1,4 @@
 import axios from 'axios'
-import _ from 'lodash'
 import Header from '../../../components/partials/header'
 import Footer from '../../../components/partials/footer'
 

@@ -254,7 +254,7 @@ export const Content80DataSource = {
         className: 'content8-block-wrapper',
         children: {
           className: 'content8-block',
-          link: '',
+          link: 'https://ds.reach-life.com',
           img: {
             className: 'content8-img',
             children:
@@ -422,7 +422,7 @@ export const Content90DataSource = {
           post: { className: 'block-post', children: '技术部' },
           time: { className: 'block-time', children: '2019.2 - 至今' },
           title: { className: 'block-title', children: 'web前端开发工程师' },
-          content: { className: 'block-content', children: '参与公司官网的开发和维护，项目主要使用 html+css+jquery 开发，使用 CSS3 动画模块Transitions,Transforms 和 Animation 交互效果，并支持 PC，ipad，手机等响应式布局' },
+          content: { className: 'block-content', children: '1，参与公司手机端兜礼商城开发，该项目基于移动端和 H5 的混合模式，前 端使用 Vue 框架,结合 Mint-ui 组件，利用 WKWebView 的新特性 MessageHandler 来实现 JS 调用原生方法进行开发 <br> 2，负责公司兜礼商城管理系统的开发，搭建项目模块架构，封装 http 请求，自定义公共组件，配置动态权限菜单和按钮，项目基于Vue框架和Element-ui组件开发，目录结构清晰，逻辑分明' },
         },
       },
     ],

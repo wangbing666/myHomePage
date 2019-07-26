@@ -176,10 +176,11 @@ export const Content80DataSource = {
         className: 'content8-block-wrapper',
         children: {
           className: 'content8-block',
+          link: 'https://www.qcxin.com/management-pci',
           img: {
             className: 'content8-img',
             children:
-              'https://gw.alipayobjects.com/zos/rmsportal/JahzbVrdHdJlkJjkNsBJ.png',
+              '/static/image/pci.png',
           },
           title: { className: 'content8-title', children: '全程心管家后台管理系统' },
           content: {
@@ -195,12 +196,12 @@ export const Content80DataSource = {
         className: 'content8-block-wrapper',
         children: {
           className: 'content8-block',
+          link: '',
           img: {
             className: 'content8-img',
-            children:
-              'https://gw.alipayobjects.com/zos/rmsportal/JahzbVrdHdJlkJjkNsBJ.png',
+            children: '/static/image/全铭心管家公众号.png'
           },
-          title: { className: 'content8-title', children: '全程心管家微信公众号' },
+          title: { className: 'content8-title', children: '全铭心管家微信公众号' },
           content: {
             className: 'content8-content',
             children: '技术：Express + Jquery',
@@ -214,10 +215,10 @@ export const Content80DataSource = {
         className: 'content8-block-wrapper',
         children: {
           className: 'content8-block',
+          link: 'http://qyj-re.wdjky.com/management-hospital',
           img: {
             className: 'content8-img',
-            children:
-              'https://gw.alipayobjects.com/zos/rmsportal/JahzbVrdHdJlkJjkNsBJ.png',
+            children: '/static/image/瑞金1.png',
           },
           title: { className: 'content8-title', children: '瑞金医院后台管理系统' },
           content: {
@@ -233,15 +234,16 @@ export const Content80DataSource = {
         className: 'content8-block-wrapper',
         children: {
           className: 'content8-block',
+          link: 'https://reach-life.com/pro_dist/dist',
           img: {
             className: 'content8-img',
             children:
-              'https://gw.alipayobjects.com/zos/rmsportal/JahzbVrdHdJlkJjkNsBJ.png',
+              '/static/image/兜礼.png',
           },
-          title: { className: 'content8-title', children: '金雷科技官网' },
+          title: { className: 'content8-title', children: '兜礼商城' },
           content: {
             className: 'content8-content',
-            children: '技术：Jquery + Bootstrap',
+            children: 'Vue + Mint-ui',
           },
         },
       },
@@ -252,15 +254,16 @@ export const Content80DataSource = {
         className: 'content8-block-wrapper',
         children: {
           className: 'content8-block',
+          link: '',
           img: {
             className: 'content8-img',
             children:
-              'https://gw.alipayobjects.com/zos/rmsportal/JahzbVrdHdJlkJjkNsBJ.png',
+              '/static/image/兜礼后台.png',
           },
-          title: { className: 'content8-title', children: '奇羽记微信公众号' },
+          title: { className: 'content8-title', children: '兜礼对账后台管理系统' },
           content: {
             className: 'content8-content',
-            children: '技术：Express + Jquery',
+            children: 'Vue' + 'Element-ui',
           },
         },
       },
@@ -271,10 +274,10 @@ export const Content80DataSource = {
         className: 'content8-block-wrapper',
         children: {
           className: 'content8-block',
+          link: '',
           img: {
             className: 'content8-img',
-            children:
-              'https://gw.alipayobjects.com/zos/rmsportal/JahzbVrdHdJlkJjkNsBJ.png',
+            children: '/static/image/创投.png', 
           },
           title: { className: 'content8-title', children: '创投通讯录小程序' },
           content: {
@@ -290,10 +293,10 @@ export const Content80DataSource = {
         className: 'content8-block-wrapper',
         children: {
           className: 'content8-block',
+          link: 'http://admin.wedo77.com/cloud-operator',
           img: {
             className: 'content8-img',
-            children:
-              'https://gw.alipayobjects.com/zos/rmsportal/JahzbVrdHdJlkJjkNsBJ.png',
+            children: '/static/image/微度.png',
           },
           title: { className: 'content8-title', children: '微度商户后台管理系统' },
           content: {
@@ -309,12 +312,12 @@ export const Content80DataSource = {
         className: 'content8-block-wrapper',
         children: {
           className: 'content8-block',
+          link: 'http://admin.wedo77.com/multiShop',
           img: {
             className: 'content8-img',
-            children:
-              'https://gw.alipayobjects.com/zos/rmsportal/JahzbVrdHdJlkJjkNsBJ.png',
+            children: '/static/image/微度H5.png',
           },
-          title: { className: 'content8-title', children: '微度APP' },
+          title: { className: 'content8-title', children: '微度H5' },
           content: {
             className: 'content8-content',
             children: '技术：React + Antd Mobile',
@@ -357,35 +360,11 @@ export const Content90DataSource = {
           icon: {
             className: 'block-icon',
             children:
-              'https://gw.alipayobjects.com/zos/rmsportal/qJnGrvjXPxdKETlVSrbe.svg',
-          },
-          name: { className: 'block-name', children: '上海金雷科技有限公司' },
-          post: { className: 'block-post', children: '技术部' },
-          time: { className: 'block-time', children: '2015.6 - 2016.3' },
-          title: { className: 'block-title', children: 'web前端开发工程师' },
-          content: { className: 'block-content', children: '参与公司官网的开发和维护，项目主要使用 html+css+jquery 开发，使用 CSS3 动画模块Transitions,Transforms 和 Animation 交互效果，并支持 PC，ipad，手机等响应式布局' },
-        },
-      },
-      {
-        name: 'block1',
-        className: 'block-wrapper',
-        playScale: 0.3,
-        children: {
-          imgWrapper: { className: 'image-wrapper' },
-          textWrapper: { className: 'text-wrapper' },
-          img: {
-            className: 'block-img',
-            children:
-              'https://gw.alipayobjects.com/zos/rmsportal/SlFgHDtOTLzccvFrQHLg.png',
-          },
-          icon: {
-            className: 'block-icon',
-            children:
               'https://gw.alipayobjects.com/zos/rmsportal/QviGtUPvTFxdhsTUAacr.svg',
           },
           name: { className: 'block-name', children: '万达信息股份有限公司' },
           post: { className: 'block-post', children: '健康云一部' },
-          time: { className: 'block-time', children: '2016.3 - 2018.5' },
+          time: { className: 'block-time', children: '2015.9 - 2018.5' },
           title: { className: 'block-title', children: 'H5开发工程师' },
           content: {
             className: 'block-content',
@@ -395,7 +374,7 @@ export const Content90DataSource = {
         },
       },
       {
-        name: 'block2',
+        name: 'block1',
         className: 'block-wrapper',
         playScale: 0.3,
         children: {
@@ -420,6 +399,30 @@ export const Content90DataSource = {
             children:
               '1，参与公司移动端微度产品开发，该项目基于移动端和 H5 的混合模式，前 端使用 React.js 框架,结合 redux 状态管理，使用 Ant Design Mobile 组件框架，利用 WKWebView 的新特性 MessageHandler 来实现 JS 调用原生方法进行开发 <br> 2，负责公司微度产品商户后台管理系统的开发，搭建项目模块架构，封装 http 请求，项目基于 Umi 框架，结 合 Dva 数据存储，和 Ant Design 组件框架进行开发',
           },
+        },
+      },
+      {
+        name: 'block2',
+        className: 'block-wrapper',
+        playScale: 0.3,
+        children: {
+          imgWrapper: { className: 'image-wrapper' },
+          textWrapper: { className: 'text-wrapper' },
+          img: {
+            className: 'block-img',
+            children:
+              'https://gw.alipayobjects.com/zos/rmsportal/SlFgHDtOTLzccvFrQHLg.png',
+          },
+          icon: {
+            className: 'block-icon',
+            children:
+              'https://gw.alipayobjects.com/zos/rmsportal/qJnGrvjXPxdKETlVSrbe.svg',
+          },
+          name: { className: 'block-name', children: '上海睿渠网络技术有限公司' },
+          post: { className: 'block-post', children: '技术部' },
+          time: { className: 'block-time', children: '2019.2 - 至今' },
+          title: { className: 'block-title', children: 'web前端开发工程师' },
+          content: { className: 'block-content', children: '参与公司官网的开发和维护，项目主要使用 html+css+jquery 开发，使用 CSS3 动画模块Transitions,Transforms 和 Animation 交互效果，并支持 PC，ipad，手机等响应式布局' },
         },
       },
     ],

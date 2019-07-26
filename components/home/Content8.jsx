@@ -20,9 +20,11 @@ class Content8 extends React.PureComponent {
     return (
       <TweenOne component={Col} animation={liAnim} key={i.toString()} {...item}>
         <div {...children}>
-          <div className="image-wrapper" {...children.img}>
-            <img src={children.img.children} alt="img" />
-          </div>
+          <a href={children.link}>
+            <div className="image-wrapper" {...children.img}>
+              <img src={children.img.children} alt="img" />
+            </div>
+          </a>
           <h2 {...children.title}>{children.title.children}</h2>
           <div {...children.content}>{children.content.children}</div>
         </div>
@@ -45,13 +47,13 @@ class Content8 extends React.PureComponent {
                 item.name.indexOf('title') === 0 ? 'h1' : 'div',
                 { key: i.toString(), ...item },
                 typeof item.children === 'string' &&
-                item.children.match(
-                  /\.(svg|gif|jpg|jpeg|png|JPG|PNG|GIF|JPEG)$/
-                )
+                  item.children.match(
+                    /\.(svg|gif|jpg|jpeg|png|JPG|PNG|GIF|JPEG)$/
+                  )
                   ? React.createElement('img', {
-                      src: item.children,
-                      alt: 'img',
-                    })
+                    src: item.children,
+                    alt: 'img',
+                  })
                   : item.children
               )
             )}

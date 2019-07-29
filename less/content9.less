@@ -1,14 +1,15 @@
 @content9: content9;
-@text-color: rgba(0, 0, 0, 0.85);
+@text-color:#666;
 @text-color2: #697b8c;
 .@{content9}-wrapper {
-  padding-bottom: 64px;
+  background: linear-gradient(to bottom, #f5dd90 70%, #f7edc2 100%);
+  padding-bottom: 24px;
   &.home-page-wrapper {
     overflow: initial;
   }
   .@{content9} {
     min-height: 800px;
-    padding: 64px 0 0;
+    padding: 24px 0 0;
   }
   .timeline {
     position: relative;
@@ -111,8 +112,10 @@
     .image-wrapper,
     .text-wrapper {
       width: 100%;
+      text-align: center;
     }
     .image-wrapper {
+      padding: 10px 20px;
       .block-img {
         display: none;
       }
@@ -128,6 +131,9 @@
       }
       .block-name {
         margin-right: 8px;
+      }
+      .block-content{
+        text-align: left;
       }
     }
     .text-wrapper {

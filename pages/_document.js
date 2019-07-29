@@ -15,8 +15,8 @@ export default class MyDocument extends Document {
       <html>
         <Head>
           <style>{`body { margin: 0 } /* custom! */`}</style>
-          <link rel="stylesheet" href="//at.alicdn.com/t/font_1124545_cr7puv4ba36.css"/>
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/antd/3.16.3/antd.min.css"/>
+          <link rel="stylesheet" href="//at.alicdn.com/t/font_1124545_cr7puv4ba36.css" />
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/antd/3.16.3/antd.min.css" />
         </Head>
         <body className="custom_class">
           <Main />

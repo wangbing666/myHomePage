@@ -64,7 +64,7 @@ class Header extends React.Component {
             {dataSource.logo.children}
           </TweenOne>
           {isMobile && (
-            <div
+            <p
               {...dataSource.mobileMenu}
               onClick={() => {
                 this.phoneClick();
@@ -73,7 +73,7 @@ class Header extends React.Component {
               <em />
               <em />
               <em />
-            </div>
+            </p>
           )}
           <TweenOne
             {...dataSource.Menu}
